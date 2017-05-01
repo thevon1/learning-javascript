@@ -136,18 +136,18 @@ Infinity
 //
 // Here is an object literal:
 
-{};
+var a = {};
 
 // Here is an object created by calling the Object constructor:
 
-new Object();
+var a = new Object();
 
 // Both of these statements are equivalent.  It is preferred to use the object literal
 // form because you can add properties and values at the time of object creation.
 //
 // Let's create an object that represents a wall:
 
-{
+var wall = {
   length: 42,
   name: 'SE',
   materialType: 'brick'
@@ -163,7 +163,7 @@ wall.materialType = 'brick';
 
 // As you can see there was considerable more typing involved with the constructor
 // form.  We also need to understand more javascript concepts to fully understand
-// what is going on with the contructor form.
+// what is going on with it.
 //
 // Working with objects is a future lesson.  Suffice it to say about objects for now
 // that they exist in javascript and that we can use them.
