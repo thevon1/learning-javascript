@@ -8,6 +8,7 @@
 /*
 {
   a: 5
+  b: 6
 };
 */
 
@@ -37,10 +38,12 @@ if (true) {
 }
 
 // Our if block will always execute because the expression contained in parenthesis
-// evaluates to true.  Let's create an if block that will never execute:
+// evaluates to true.  
+// 
+// Now, let's create an if block that will never execute:
 
 if (false) {
-  // never run
+  // code to execute, but doesn't, because of the 'false' expression
 }
 
 // This if block is effectively useless because the expression contained in
@@ -112,13 +115,15 @@ console.log(5);
 // If you copy and paste those 2 lines into your chrome console you'll see 5 printed.
 // Now execute these 2 lines:
 
-if (false)
+if (true) {
 console.log(5);
+}
 
-// counterintuitively 5 is not printed.  Just because you can do something, i.e.
-// omit the curly braces in a block, doesn't mean that you should.  Programs are
-// usually maintained for a long time and any effort you can make for them to be
-// easier to understand is time well spent.
+// You get the same result. But now you can clearly read that console.log(5) is 
+// statment of the if block.
+
+// Programs are usually maintained for a long time and any effort you 
+// can make for them to be easier to understand, is time well spent.
 //
 // You can have an unlimited number of if, else if, else if, else if, else statements
 // in an if block chain.
